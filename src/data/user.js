@@ -34,15 +34,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://wa.me/918485022235?text=Hi",
 		},
-
 		{
-			title: "Kensho E-Commerce Bot",
+			title: "RDTMT STEEL",
 			description:
-				"A WhatsApp chatbot revolutionizing grocery shopping in Chennai, enabling purchases within 2 minutes. Seamlessly integrated with live Shopify APIs for a smooth shopping experience.",
-			logo: "https://i.postimg.cc/vZRSJKbb/file-1.png",
+				"Its a full stack application build using ReactJs Library and Live for client.",
+			logo: "https://i.postimg.cc/G24kZkwt/rdtmt-logo.png",
 			linkText: "View Project",
-			link: "https://wa.me/919791193000?text=Hi",
-		},
+			link: "https://rdtmt.com/",
+		}
 	],
 };
 

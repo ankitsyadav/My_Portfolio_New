@@ -15,6 +15,20 @@ const Works = () => {
 					<div className="works-body">
 						<div className="work">
 							<img
+								src="https://i.postimg.cc/SQ583Zrp/propelx-club-logo.jpg"
+								alt="PropelX Ventures"
+								className="work-image"
+							/>
+							<div className="work-title">PropelX Ventures</div>
+							<div className="work-subtitle">
+								Software Engineer 1
+							</div>
+							<div className="work-duration">
+								August 2024 - Present
+							</div>
+						</div>
+						<div className="work">
+							<img
 								src="https://i.postimg.cc/9FcNRDF6/1640436028142.jpg"
 								alt="Hey Homie"
 								className="work-image"
@@ -24,7 +38,7 @@ const Works = () => {
 								Software Engineer 1
 							</div>
 							<div className="work-duration">
-								Nov 2022 - Present
+								Nov 2022 - October 2024
 							</div>
 						</div>
 
