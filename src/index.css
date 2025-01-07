@@ -6,6 +6,8 @@ body {
 	font-family: var(--primary-font);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	background-color: #e0e0e0; /* Changed to a slightly darker gray for a more 3D look */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for a 3D look */
 }
 
 code {

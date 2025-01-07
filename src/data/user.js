@@ -14,15 +14,19 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Full-stack Developer",
-		description:
-			"Full Stack Developer (SDE 1) renowned for crafting powerful WhatsApp chatbots, driving success for 50+ B2B clients. Skilled in Google App Script automation, boosting productivity by 50%. Proficient in Node.js backend development and efficient deployment on Digital Ocean. Adept in React.js for building dynamic and responsive user interfaces, seamlessly integrating front-end experiences. Excels in the MERN stack,	bringing comprehensive expertise to both client and server-side development. Eager to leverage	technical excellence and a diverse skill set to contribute to your team's success",
+		title: "Node.js Developer ! Backend Engineer ! WhatsApp Chatbot Expert!",
+		description: `Experienced Node.js developer with 2 years of expertise in building scalable, high-performance web applications.
+Proficient in designing and maintaining server-side applications with a focus on efficiency, security, and scalability.
+Skilled in collaborating within project teams, following agile methodologies, and writing clean, maintainable code.
+Committed to delivering robust solutions through thorough testing, performance optimization, and the adoption of
+best practices.`,
 	},
 
 	about: {
-		title: "I’m Ankit Singh Yadav. I live in  Bangalore India, where I design the future.",
-		description:
-			"Welcome to my portfolio! I'm a Software Development Engineer (SDE) specializing in the MERN stack. With a passion for crafting efficient and scalable solutions, I've worked on diverse projects, from dynamic e-commerce platforms to interactive social media applications. My focus is on clean code architecture and user-centric design. I'm open to collaboration and eager to learn from others. Feel free to explore my projects, and don't hesitate to reach out with any ideas or suggestions.			Thank you for visiting!",
+		title: "I’m Ankit Singh Yadav. I live in Bangalore India, where I design the future.",
+		description: `Welcome to my portfolio! I'm a Software Development Engineer (SDE) specializing in the MERN stack. With a passion for crafting efficient and scalable solutions, I've worked on diverse projects, from dynamic e-commerce platforms to interactive social media applications. My focus is on clean code architecture and user-centric design. I'm open to collaboration and eager to learn from others. Feel free to explore my projects, and don't hesitate to reach out with any ideas or suggestions.
+			
+			My expertise includes Node.js, JavaScript (ES6+), Express.js, RESTful APIs, MongoDB, Asynchronous Programming, Event-Driven Architecture, Error Handling, Logging, Git, NPM/Yarn, JWT, OAuth, Problem-Solving, Collaboration, Teamwork, and Agile/Scrum Methodology. Thank you for visiting!`,
 	},
 
 	projects: [
@@ -41,7 +45,7 @@ const INFO = {
 			logo: "https://i.postimg.cc/G24kZkwt/rdtmt-logo.png",
 			linkText: "View Project",
 			link: "https://rdtmt.com/",
-		}
+		},
 	],
 };
 

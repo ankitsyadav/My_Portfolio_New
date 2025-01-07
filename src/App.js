@@ -5,7 +5,6 @@ import ReactGA from "react-ga4";
 import Homepage from "./pages/homepage";
 import About from "./pages/about";
 import Projects from "./pages/projects";
-
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 
@@ -14,9 +13,7 @@ import "./app.css";
 
 function App() {
 	useEffect(() => {
-		if (TRACKING_ID !== "") {
-			ReactGA.initialize(TRACKING_ID);
-		}
+		TRACKING_ID && ReactGA.initialize(TRACKING_ID);
 	}, []);
 
 	return (
