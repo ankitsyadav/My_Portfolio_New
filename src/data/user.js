@@ -30,14 +30,7 @@ best practices.`,
 	},
 
 	projects: [
-		{
-			title: "GHFL WhatsApp Chat Bot ",
-			description:
-				"Developed and implemented a custom loan referral program for GHFL, enabling users to conveniently refer potential loan applicants via WhatsApp.",
-			logo: "https://i.postimg.cc/PqwycVZY/20240330-004944.jpg",
-			linkText: "View Project",
-			link: "https://wa.me/918485022235?text=Hi",
-		},
+		
 		{
 			title: "RDTMT STEEL",
 			description:
@@ -45,7 +38,7 @@ best practices.`,
 			logo: "https://i.postimg.cc/G24kZkwt/rdtmt-logo.png",
 			linkText: "View Project",
 			link: "https://rdtmt.com/",
-		},
+		}
 	],
 };
 
