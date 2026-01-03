@@ -1,8 +1,8 @@
 const INFO = {
 	main: {
-		title: "Ankit Singh Yadav Portfolio",
+		title: "Ankit Singh Yadav | Backend & DevOps Engineer",
 		name: "Ankit Singh Yadav",
-		email: "ankitsinghyadav009@gmail.com",
+		email: "ankitsinghyadav.official@gmail.com",
 		logo: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
 	},
 
@@ -14,31 +14,56 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Node.js Developer ! Backend Engineer ! WhatsApp Chatbot Expert!",
-		description: `Experienced Node.js developer with 2 years of expertise in building scalable, high-performance web applications.
-Proficient in designing and maintaining server-side applications with a focus on efficiency, security, and scalability.
-Skilled in collaborating within project teams, following agile methodologies, and writing clean, maintainable code.
-Committed to delivering robust solutions through thorough testing, performance optimization, and the adoption of
-best practices.`,
-	},
+	title: "Backend & DevOps Engineer | Node.js | AWS | Cloud Infrastructure",
+	description: `Backend & DevOps Engineer with 3.5+ years of experience building scalable backend systems,
+low-latency APIs, and production-grade microservices using Node.js.
+
+Experienced in designing and deploying cloud-native systems on AWS using EC2, S3, ECS, Fargate,
+and serverless architectures. Hands-on with containerization, CI/CD pipelines, and infrastructure
+automation using Docker, GitHub Actions, Kubernetes, and Terraform.
+
+Strong focus on performance optimization, reliability, and production-ready backend engineering.`,
+},
+
 
 	about: {
-		title: "I’m Ankit Singh Yadav. I live in Bangalore India, where I design the future.",
-		description: `Welcome to my portfolio! I'm a Software Development Engineer (SDE) specializing in the MERN stack. With a passion for crafting efficient and scalable solutions, I've worked on diverse projects, from dynamic e-commerce platforms to interactive social media applications. My focus is on clean code architecture and user-centric design. I'm open to collaboration and eager to learn from others. Feel free to explore my projects, and don't hesitate to reach out with any ideas or suggestions.
-			
-			My expertise includes Node.js, JavaScript (ES6+), Express.js, RESTful APIs, MongoDB, Asynchronous Programming, Event-Driven Architecture, Error Handling, Logging, Git, NPM/Yarn, JWT, OAuth, Problem-Solving, Collaboration, Teamwork, and Agile/Scrum Methodology. Thank you for visiting!`,
-	},
+	title: "Backend & DevOps Engineer based in India",
+	description: `I am a Backend & DevOps Engineer with over 3.5 years of experience building and operating
+production-grade backend systems using Node.js and modern cloud infrastructure.
+
+My work includes developing scalable microservices, low-latency APIs, and fintech workflows,
+along with deploying and maintaining systems on AWS using EC2, S3, ECS, and Fargate.
+I have worked with both container-based and serverless architectures depending on system requirements.
+
+On the DevOps side, I actively work with Docker, GitHub Actions, Linux, Nginx, and cloud observability tools.
+I have hands-on experience with Kubernetes for container orchestration and Terraform for
+infrastructure provisioning and environment automation.
+
+I value clean architecture, system thinking, and reliability, and I also enjoy mentoring engineers
+and students on backend development, DevOps practices, and real-world deployment workflows.`,
+},
+
 
 	projects: [
-		
 		{
-			title: "RDTMT STEEL",
+			title: "URL UPTIME AND STATUS MONITORING SYSTEM",
 			description:
-				"Its a full stack application build using ReactJs Library and Live for client.",
+				"A backend-focused monitoring system built using Node.js with EJS-based server-side rendering. The application performs scheduled URL health checks, tracks uptime and HTTP status codes, and logs downtime events. Designed for reliability and simplicity, with no separate frontend layer.",
 			logo: "https://i.postimg.cc/G24kZkwt/rdtmt-logo.png",
 			linkText: "View Project",
-			link: "https://rdtmt.com/",
-		}
+			link: "https://swiftcheck-fft8.onrender.com/dashboard",
+		},
+		// https://www.taiyari-express.in/
+
+		{
+			title: "Taiyari Express - Exam Preparation Platform",
+			description:
+				// fully on react no backend powered by filesystem for questions
+				"A comprehensive exam preparation platform offering a wide range of practice tests and study materials for competitive exams. Built with a focus on user experience, the platform provides detailed performance analytics and progress tracking to help students prepare effectively.",
+			logo: "https://i.postimg.cc/G24kZkwt/rdtmt-logo.png",
+			linkText: "View Project",
+			link: "https://www.taiyari-express.in/",
+		},
 	],
 };
 

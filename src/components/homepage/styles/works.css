@@ -1,44 +1,99 @@
 @import "../../../data/styles.css";
 
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 .works-body {
-	margin-bottom: 10px;
+	animation: slideInLeft 0.6s ease-out;
+
+}
+.works {
+	display: flex;
+	flex-direction: column;
+	
+	width: 1000px;
+	max-width: 100%;
 }
 
 .work {
 	display: flex;
-	padding-bottom: 40px;
-	width: 400px;
+	flex-direction: column;
+	padding-bottom: 15px;
+	width: 100%;
+	max-width: 100%;
+	align-items: flex-start;
+	position: relative;
+	transition: transform 0.3s ease;
+	gap: 3px;
+}
+
+.work:hover {
+	transform: translateX(8px);
 }
 
 .work-image {
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	border-radius: 50%;
-	outline: 6px solid white;
-	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.25);
+	outline: 2px solid rgba(15, 157, 140, 0.2);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+	flex-shrink: 0;
+	transition: all 0.3s ease;
+	object-fit: cover;
+}
+
+.work:hover .work-image {
+	outline-color: var(--link-color);
+	box-shadow: 0 8px 32px rgba(15, 157, 140, 0.2);
+	transform: scale(1.1);
+}
+
+.work-content {
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	gap: 20px;
 }
 
 .work-title {
 	font-size: 15px;
 	font-weight: 700;
-	padding-left: 20px;
-	margin-top: -3px;
-	color: var(--secondary-color);
+	color: var(--primary-color);
+	transition: color 0.3s ease;
+	margin: 0;
+}
+
+.work:hover .work-title {
+	color: var(--link-color);
 }
 
 .work-subtitle {
-	position: absolute;
 	font-size: 12px;
 	color: var(--secondary-color);
-	padding-top: 22px;
-	padding-left: 50px;
+	opacity: 0.8;
+	transition: opacity 0.3s ease;
+	margin: 0;
+}
+
+.work:hover .work-subtitle {
+	opacity: 1;
 }
 
 .work-duration {
-	position: absolute;
-	width: 350px;
+	width: auto;
 	font-size: 12px;
-	padding-top: 20px;
-	text-align: right;
 	color: var(--tertiary-color);
+	font-weight: 500;
+	margin-left: auto;
+	white-space: nowrap;
+	text-align: right;
+	transition: color 0.3s ease;
 }

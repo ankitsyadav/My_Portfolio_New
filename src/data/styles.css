@@ -5,6 +5,13 @@
 	--tertiary-color: #9a9aa1;
 	--quaternary-color: #dcdce0;
 	--link-color: #0f9d8c;
+	--gradient-primary: linear-gradient(135deg, #0f9d8c 0%, #0a6d6a 100%);
+	--gradient-secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	--gradient-tertiary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+	--shadow-hover: 0 12px 48px rgba(0, 0, 0, 0.18);
 	/* ---------------------- */
 
 	/* ------- fonts ------- */

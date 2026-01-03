@@ -1,20 +1,60 @@
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 .contact-logo-container {
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
+	animation: fadeInUp 0.6s ease-out;
 }
 
 .contact-logo {
 	display: flex;
 	position: fixed;
-	border: 1px solid white;
+	border: 2px solid rgba(15, 157, 140, 0.3);
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
 	top: 4vh;
+	background: rgba(255, 255, 255, 0.95);
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease;
+}
+
+.contact-logo:hover {
+	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18);
+	transform: scale(1.05);
 }
 
 .contact-subtitle {
 	width: 100% !important;
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.3;
+	background: linear-gradient(135deg, #1a1a1d 0%, #0f9d8c 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	margin-bottom: 20px;
+	animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .contact-container {
@@ -22,17 +62,21 @@
 	flex-direction: column;
 	justify-content: space-around;
 	margin-top: 120px;
+	gap: 40px;
 }
-
 
 .socials-container {
 	display: flex;
 	flex-direction: column;
 	margin-top: 80px;
+	animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .contact-socials {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	animation: slideIn 0.8s ease-out 0.6s both;
 }
