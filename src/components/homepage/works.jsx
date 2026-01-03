@@ -56,11 +56,9 @@ const Works = () => {
 							</div>
 
 							<ul className="work-points">
-								<li>Developed low-latency backend services for Flipkart and Meesho EMI onboarding</li>
+								<li>Developed low-latency backend services for Flipkart EMI onboarding on API Orchestration platform</li>
 								<li>Achieved sub-200ms API latency under peak production traffic</li>
 								<li>Built microservices for Mercedes-Benz Financial Services LOS with retries and validations</li>
-								<li>Implemented Redis caching and async workers reducing backend load by 40%</li>
-								<li>Automated deployments using Docker and GitHub Actions</li>
 							</ul>
 						</div>
 
@@ -82,10 +80,10 @@ const Works = () => {
 							</div>
 
 							<ul className="work-points">
-								<li>Built 80+ WhatsApp automation bots for B2B workflows and high-volume messaging</li>
-								<li>Developed internal automation tools using Node.js and Apps Script</li>
+								<li>Built 80+ WhatsApp automation bots for B2B workflows and high-volume messaging using Uchat.</li>
+								<li>Developed internal automation tools using Node.js and Google Apps Script</li>
 								<li>Optimized MongoDB schemas and aggregation pipelines improving query performance by 50%</li>
-								<li>Implemented monitoring dashboards using Grafana and Prometheus</li>
+								<li>Implemented monitoring dashboards</li>
 							</ul>
 						</div>
 
