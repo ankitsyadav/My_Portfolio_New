@@ -1,0 +1,100 @@
+@import "../../../data/styles.css";
+
+@keyframes scrollTech {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+.tech-strip {
+	padding: var(--space-2xl) 0;
+	background: var(--bg-light);
+	border-top: 1px solid var(--quaternary-color);
+	border-bottom: 1px solid var(--quaternary-color);
+	overflow: hidden;
+}
+
+.tech-strip-header {
+	text-align: center;
+	margin-bottom: var(--space-xl);
+}
+
+.tech-strip-label {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--tertiary-color);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.tech-strip-track {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.tech-strip-track::before,
+.tech-strip-track::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	z-index: 2;
+	pointer-events: none;
+}
+
+.tech-strip-track::before {
+	left: 0;
+	background: linear-gradient(to right, var(--bg-light), transparent);
+}
+
+.tech-strip-track::after {
+	right: 0;
+	background: linear-gradient(to left, var(--bg-light), transparent);
+}
+
+.tech-strip-scroll {
+	display: flex;
+	gap: var(--space-xl);
+	animation: scrollTech 30s linear infinite;
+	width: max-content;
+}
+
+.tech-strip-scroll:hover {
+	animation-play-state: paused;
+}
+
+.tech-strip-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 20px;
+	background: var(--bg-white);
+	border-radius: var(--radius-md);
+	border: 1px solid var(--quaternary-color);
+	white-space: nowrap;
+	transition: all 0.3s ease;
+	flex-shrink: 0;
+}
+
+.tech-strip-item:hover {
+	border-color: var(--link-color);
+	box-shadow: var(--shadow-sm);
+	transform: translateY(-2px);
+}
+
+.tech-strip-logo {
+	width: 28px;
+	height: 28px;
+	object-fit: contain;
+}
+
+.tech-strip-name {
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--secondary-color);
+}

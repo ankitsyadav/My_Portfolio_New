@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
-import AllProjects from "../components/projects/allProjects";
+import Project from "../components/projects/project";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -12,11 +11,25 @@ import SEO from "../data/seo";
 import "./styles/projects.css";
 
 const Projects = () => {
+	const [activeFilter, setActiveFilter] = useState("All");
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "projects");
+
+	const allTags = [
+		"All",
+		...new Set(INFO.projects.flatMap((p) => p.tags || [])),
+	];
+
+	const filteredProjects =
+		activeFilter === "All"
+			? INFO.projects
+			: INFO.projects.filter(
+					(p) => p.tags && p.tags.includes(activeFilter)
+			  );
 
 	return (
 		<React.Fragment>
@@ -32,38 +45,47 @@ const Projects = () => {
 			<div className="page-content">
 				<NavBar active="projects" />
 				<div className="content-wrapper">
-					<div className="projects-logo-container">
-						<div className="projects-logo">
-							<Logo width={46} />
-						</div>
-					</div>
-					<div className="projects-container">
-						<div className="title projects-title">
-							Things I’ve made trying to put my dent in the
-							universe.
-						</div>
+					<section className="projects-hero">
+						<span className="projects-badge">Portfolio</span>
+						<h1 className="projects-title">
+							Things I've Built
+						</h1>
+						<p className="projects-subtitle">
+							A collection of projects showcasing backend
+							engineering, DevOps automation, and full-stack
+							development.
+						</p>
+					</section>
 
-						<div className="subtitle projects-subtitle">
-							I've worked on a variety of projects over the years
-							and I'm proud of the progress I've made. Many of
-							these projects are open-source and available for
-							others to explore and contribute to. If you're
-							interested in any of the projects I've worked on,
-							please feel free to check out the code and suggest
-							any improvements or enhancements you might have in
-							mind. Collaborating with others is a great way to
-							learn and grow, and I'm always open to new ideas and
-							feedback.
-						</div>
-
-						<div className="projects-list">
-							<AllProjects />
-						</div>
+					<div className="projects-filters">
+						{allTags.map((tag) => (
+							<button
+								key={tag}
+								className={`projects-filter-btn ${
+									activeFilter === tag ? "active" : ""
+								}`}
+								onClick={() => setActiveFilter(tag)}
+							>
+								{tag}
+							</button>
+						))}
 					</div>
-					<div className="page-footer">
-						<Footer />
+
+					<div className="projects-grid">
+						{filteredProjects.map((project, index) => (
+							<div className="projects-grid-item" key={index}>
+								<Project
+									logo={project.logo}
+									title={project.title}
+									description={project.description}
+									linkText={project.linkText}
+									link={project.link}
+								/>
+							</div>
+						))}
 					</div>
 				</div>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);

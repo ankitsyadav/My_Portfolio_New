@@ -1,0 +1,102 @@
+@import "../../../data/styles.css";
+
+@keyframes chipFadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px) scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+.tabbed-skills {
+	background: var(--bg-light);
+}
+
+.tabs-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.tab-buttons {
+	display: flex;
+	justify-content: center;
+	gap: var(--space-sm);
+	margin-bottom: var(--space-xl);
+}
+
+.tab-btn {
+	padding: 12px 28px;
+	border: 2px solid var(--quaternary-color);
+	border-radius: var(--radius-full);
+	background: var(--bg-white);
+	color: var(--secondary-color);
+	font-size: 0.9rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-family: var(--primary-font);
+}
+
+.tab-btn:hover {
+	border-color: var(--link-color);
+	color: var(--link-color-dark);
+}
+
+.tab-btn.active {
+	background: var(--gradient-primary);
+	color: white;
+	border-color: transparent;
+	box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+}
+
+.tab-content {
+	padding: var(--space-lg);
+	background: var(--bg-white);
+	border-radius: var(--radius-xl);
+	border: 1px solid var(--quaternary-color);
+	min-height: 200px;
+}
+
+.skills-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-sm);
+	justify-content: center;
+}
+
+.skill-chip {
+	padding: 10px 20px;
+	background: var(--bg-light);
+	color: var(--primary-color);
+	border-radius: var(--radius-full);
+	font-size: 0.85rem;
+	font-weight: 500;
+	border: 1px solid var(--quaternary-color);
+	transition: all 0.3s ease;
+	animation: chipFadeIn 0.4s ease-out both;
+}
+
+.skill-chip:hover {
+	background: rgba(37, 211, 102, 0.1);
+	border-color: var(--link-color);
+	color: var(--link-color-dark);
+	transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+	.tab-buttons {
+		flex-wrap: wrap;
+	}
+
+	.tab-btn {
+		padding: 10px 20px;
+		font-size: 0.8rem;
+	}
+
+	.tab-content {
+		padding: var(--space-md);
+	}
+}

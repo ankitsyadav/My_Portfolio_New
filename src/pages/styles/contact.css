@@ -1,82 +1,130 @@
-@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+@import "../../data/styles.css";
+
+/* ─── Contact Hero ─── */
+.contact-hero {
+	padding-top: 120px;
+	padding-bottom: 48px;
+	text-align: center;
 }
 
-@keyframes slideIn {
-	from {
-		opacity: 0;
-		transform: translateX(-30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+.contact-badge {
+	display: inline-block;
+	background: rgba(37, 211, 102, 0.1);
+	color: var(--link-color);
+	font-size: 0.85rem;
+	font-weight: 600;
+	padding: 6px 16px;
+	border-radius: 20px;
+	margin-bottom: 16px;
 }
 
-.contact-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
-	animation: fadeInUp 0.6s ease-out;
-}
-
-.contact-logo {
-	display: flex;
-	position: fixed;
-	border: 2px solid rgba(15, 157, 140, 0.3);
-	border-radius: 50%;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
-	top: 4vh;
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	transition: all 0.3s ease;
-}
-
-.contact-logo:hover {
-	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18);
-	transform: scale(1.05);
-}
-
-.contact-subtitle {
-	width: 100% !important;
-	font-size: 2.5rem;
+.contact-title {
+	font-size: 2.8rem;
 	font-weight: 700;
-	line-height: 1.3;
-	background: linear-gradient(135deg, #1a1a1d 0%, #0f9d8c 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	margin-bottom: 20px;
-	animation: fadeInUp 0.8s ease-out 0.2s both;
+	color: var(--primary-color);
+	margin: 0 0 16px;
 }
 
-.contact-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 120px;
-	gap: 40px;
+.contact-description {
+	font-size: 1.05rem;
+	color: var(--secondary-color);
+	max-width: 550px;
+	margin: 0 auto;
+	line-height: 1.7;
 }
 
-.socials-container {
-	display: flex;
-	flex-direction: column;
-	margin-top: 80px;
-	animation: fadeInUp 0.8s ease-out 0.4s both;
-}
-
-.contact-socials {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
+/* ─── Card Grid ─── */
+.contact-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 20px;
-	animation: slideIn 0.8s ease-out 0.6s both;
+	padding-bottom: 80px;
+}
+
+.contact-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 32px 24px;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: var(--radius-lg, 12px);
+	text-decoration: none;
+	color: inherit;
+	transition: all 0.2s ease;
+}
+
+.contact-card:hover {
+	border-color: var(--link-color);
+	box-shadow: 0 8px 24px rgba(37, 211, 102, 0.1);
+	transform: translateY(-4px);
+}
+
+.contact-card--muted {
+	cursor: default;
+}
+
+.contact-card--muted:hover {
+	transform: none;
+	box-shadow: none;
+	border-color: #e5e7eb;
+}
+
+.contact-card-icon {
+	width: 52px;
+	height: 52px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 14px;
+	background: rgba(37, 211, 102, 0.1);
+	color: var(--link-color);
+	font-size: 1.3rem;
+	margin-bottom: 16px;
+}
+
+.contact-card h3 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0 0 6px;
+	color: var(--primary-color);
+}
+
+.contact-card p {
+	font-size: 0.85rem;
+	color: var(--secondary-color);
+	margin: 0 0 16px;
+	line-height: 1.5;
+}
+
+.contact-card-action {
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--link-color);
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-top: auto;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+	.contact-hero {
+		padding-top: 100px;
+	}
+
+	.contact-title {
+		font-size: 2rem;
+	}
+
+	.contact-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-grid {
+		grid-template-columns: 1fr;
+	}
 }

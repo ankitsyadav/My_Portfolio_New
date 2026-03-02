@@ -1,54 +1,93 @@
-@keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
+@import "../../data/styles.css";
 
-.projects-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
-	animation: fadeInUp 0.6s ease-out;
-}
-
-.projects-logo {
-	display: flex;
-	position: fixed;
-	border: 2px solid rgba(15, 157, 140, 0.3);
-	border-radius: 50%;
-	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.16);
-	top: 4vh;
-	z-index: 999;
-	background: rgba(255, 255, 255, 0.95);
-	backdrop-filter: blur(10px);
-	transition: all 0.3s ease;
-}
-
-.projects-logo:hover {
-	box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18);
-	transform: scale(1.05);
-}
-
-.projects-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
+/* ─── Projects Hero ─── */
+.projects-hero {
 	padding-top: 120px;
-	animation: fadeInUp 0.8s ease-out 0.2s both;
+	padding-bottom: 40px;
+	text-align: center;
 }
 
-@media (max-width: 600px) {
-	.projects-container {
-		padding-top: 60px;
+.projects-badge {
+	display: inline-block;
+	background: rgba(37, 211, 102, 0.1);
+	color: var(--link-color);
+	font-size: 0.85rem;
+	font-weight: 600;
+	padding: 6px 16px;
+	border-radius: 20px;
+	margin-bottom: 16px;
+}
+
+.projects-title {
+	font-size: 2.8rem;
+	font-weight: 700;
+	color: var(--primary-color);
+	margin: 0 0 16px;
+}
+
+.projects-subtitle {
+	font-size: 1.05rem;
+	color: var(--secondary-color);
+	max-width: 600px;
+	margin: 0 auto;
+	line-height: 1.7;
+}
+
+/* ─── Filter Tabs ─── */
+.projects-filters {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.projects-filter-btn {
+	padding: 8px 20px;
+	border: 1px solid #e5e7eb;
+	border-radius: 20px;
+	background: #fff;
+	color: var(--secondary-color);
+	font-size: 0.85rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.projects-filter-btn:hover {
+	border-color: var(--link-color);
+	color: var(--link-color);
+}
+
+.projects-filter-btn.active {
+	background: var(--gradient-primary);
+	color: #fff;
+	border-color: transparent;
+}
+
+/* ─── Grid ─── */
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 24px;
+	padding-bottom: 80px;
+}
+
+.projects-grid-item {
+	width: 100%;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+	.projects-hero {
+		padding-top: 100px;
 	}
 
-	.projects-project {
-		width: calc(100% / 2);
+	.projects-title {
+		font-size: 2rem;
+	}
+
+	.projects-grid {
+		grid-template-columns: 1fr;
 	}
 }
