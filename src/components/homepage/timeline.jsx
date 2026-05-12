@@ -28,11 +28,17 @@ const Timeline = () => {
 							</div>
 							<div className="timeline-content">
 								<div className="timeline-header">
-									<img
-										src={exp.logo}
-										alt={exp.company}
-										className="timeline-logo"
-									/>
+									{exp.logo ? (
+										<img
+											src={exp.logo}
+											alt={exp.company}
+											className="timeline-logo"
+										/>
+									) : (
+										<div className="timeline-logo timeline-logo-placeholder">
+											{exp.company.charAt(0)}
+										</div>
+									)}
 									<div className="timeline-info">
 										<h3 className="timeline-company">
 											{exp.company}

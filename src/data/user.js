@@ -1,9 +1,9 @@
 const INFO = {
 	main: {
-		title: "Ankit Singh Yadav | Backend & DevOps Engineer",
+		title: "Ankit Singh Yadav | Backend Engineer & WhatsApp Automation Expert",
 		name: "Ankit Singh Yadav",
 		email: "ankitsinghyadav.official@gmail.com",
-		logo: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+		logo: "/profile.jpeg",
 		resumeLink: "#", // Replace with actual resume URL
 	},
 
@@ -15,17 +15,17 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Building Scalable Backend Systems & Cloud Infrastructure",
-		subtitle: "Backend & DevOps Engineer",
+		title: "Building Scalable Systems & WhatsApp Automation for Real Businesses",
+		subtitle: "Backend Engineer · WhatsApp Automation Expert · DevOps",
 		description:
-			"3.5+ years of experience crafting production-grade microservices, low-latency APIs, and cloud-native systems. I turn complex requirements into reliable, scalable solutions.",
+			"4+ years shipping production-grade backend systems, fintech APIs, and 80+ WhatsApp automation bots. I bridge engineering excellence with real-world business automation.",
 	},
 
 	stats: [
-		{ value: "3.5+", label: "Years Experience" },
-		{ value: "10+", label: "Projects Delivered" },
+		{ value: "4+", label: "Years Experience" },
+		{ value: "80+", label: "WhatsApp Bots Built" },
 		{ value: "200+", label: "Students Mentored" },
-		{ value: "99.9%", label: "System Uptime" },
+		{ value: "<200ms", label: "API Latency Achieved" },
 	],
 
 	techStack: [
@@ -63,9 +63,51 @@ const INFO = {
 			"React.js", "JavaScript (ES6+)", "TypeScript",
 			"HTML5 & CSS3", "Responsive Design", "EJS Templates",
 		],
+		"WhatsApp Automation": [
+			"WhatsApp Business API",
+			"Uchat / Wati.io",
+			"Chatbot Flow Design",
+			"Lead & Inquiry Automation",
+			"FAQ Bot Development",
+			"Appointment Booking Bots",
+			"B2B Workflow Automation",
+			"Broadcast & Campaign Bots",
+		],
 	},
 
+	education: [
+		{
+			institution: "Army Public School",
+			degree: "Senior Secondary (12th)",
+			location: "India",
+			note: "",
+		},
+		{
+			institution: "Pune University",
+			degree: "B.Sc. Physics",
+			location: "Pune",
+			note: "With Distinction",
+		},
+		{
+			institution: "MJPRU (Mahatma Jyotiba Phule Rohilkhand University)",
+			degree: "M.A. Economics",
+			location: "Bareilly",
+			note: "NTA NET Qualified — 2 Times",
+		},
+	],
+
 	experience: [
+		{
+			company: "EduFund",
+			location: "India",
+			role: "Product Engineer 2",
+			duration: "Mar 2026 – Present",
+			logo: "/edufund.webp",
+			points: [
+				"Building and shipping product features for India's leading education investment platform",
+				"Contributing to backend APIs, platform reliability, and product infrastructure for EdTech fintech workflows",
+			],
+		},
 		{
 			company: "Newton School of Technology",
 			location: "Pune",
@@ -73,10 +115,10 @@ const INFO = {
 			duration: "Aug 2025 – Present",
 			logo: "https://i.postimg.cc/sDFJxLdq/channels4-profile.jpg",
 			points: [
-				"Mentoring 200+ students in Node.js, DevOps, Docker, CI/CD, and AWS deployments",
-				"Designed reusable backend architecture templates for auth, APIs, and worker services",
-				"Built CI/CD pipelines using GitHub Actions, Docker, and Nginx reducing deployment effort by 70%",
-				"Guided development of scalable, fault-tolerant backend systems with caching and async jobs",
+				"Mentoring 200+ students across Node.js, Docker, CI/CD, and AWS — with 90%+ placement rate in cohort",
+				"Designed reusable backend architecture templates adopted across 15+ student projects",
+				"Built CI/CD pipelines using GitHub Actions + Docker + Nginx, reducing student deployment effort by 70%",
+				"Conducted live system design sessions on microservices, caching, and fault-tolerant architectures",
 			],
 		},
 		{
@@ -86,9 +128,9 @@ const INFO = {
 			duration: "Jan 2025 – Aug 2025",
 			logo: "https://i.postimg.cc/Bn0JnJv1/m2p-logo.png",
 			points: [
-				"Developed low-latency backend services for Flipkart EMI onboarding on API Orchestration platform",
-				"Achieved sub-200ms API latency under peak production traffic",
-				"Built microservices for Mercedes-Benz Financial Services LOS with retries and validations",
+				"Engineered low-latency backend services for Flipkart EMI onboarding on API Orchestration platform — processing high-volume financial transactions",
+				"Achieved sub-200ms API latency under peak production traffic via optimized middleware and DB query tuning",
+				"Built fault-tolerant microservices for Mercedes-Benz Financial Services LOS with retry logic, validations, and audit trails",
 			],
 		},
 		{
@@ -98,10 +140,21 @@ const INFO = {
 			duration: "Nov 2022 – Jan 2025",
 			logo: "https://i.postimg.cc/9FcNRDF6/1640436028142.jpg",
 			points: [
-				"Built 80+ WhatsApp automation bots for B2B workflows and high-volume messaging using Uchat",
-				"Developed internal automation tools using Node.js and Google Apps Script",
-				"Optimized MongoDB schemas and aggregation pipelines improving query performance by 50%",
-				"Implemented monitoring dashboards",
+				"Architected and deployed 80+ WhatsApp automation bots for B2B client workflows handling 10,000+ messages/day",
+				"Built custom Node.js + Google Apps Script automation tools, saving 20+ manual hours/week for operations teams",
+				"Optimized MongoDB schemas and aggregation pipelines, improving query performance by 50% on high-traffic collections",
+				"Implemented real-time monitoring dashboards tracking bot health, delivery rates, and conversation metrics",
+			],
+		},
+		{
+			company: "Subhadra Devi Mularam Krishak Mahavidyalaya",
+			location: "Noogohi, Shahjahanpur",
+			role: "Assistant Professor",
+			duration: "Jan 2022 – Nov 2022",
+			logo: "",
+			points: [
+				"Delivered undergraduate Economics curriculum to 100+ students at Shahjahanpur college",
+				"Qualified NTA NET examination twice — demonstrating strong subject matter expertise in Economics",
 			],
 		},
 	],
@@ -111,39 +164,65 @@ const INFO = {
 			quote: "Ankit is one of the most dedicated backend engineers I've worked with. His ability to design scalable systems and mentor juniors is exceptional.",
 			name: "Tech Lead",
 			role: "FinXBridge / M2P Fintech",
-			image: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			image: "/profile.jpeg",
 		},
 		{
 			quote: "His DevOps expertise helped us reduce our deployment time by over 70%. Ankit brings both deep technical skills and great communication to every team.",
 			name: "Engineering Manager",
 			role: "Newton School of Technology",
-			image: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			image: "/profile.jpeg",
 		},
 		{
 			quote: "Working with Ankit on our WhatsApp automation infrastructure was a game-changer. He delivered reliable systems that handled thousands of messages daily.",
 			name: "Product Manager",
 			role: "Hey Homie",
-			image: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			image: "/profile.jpeg",
 		},
 	],
 
 	about: {
-		title: "Backend & DevOps Engineer based in India",
-		description: `I am a Backend & DevOps Engineer with over 3.5 years of experience building and operating production-grade backend systems using Node.js and modern cloud infrastructure.
+		title: "Backend Engineer, WhatsApp Automation Expert & Mentor",
+		description: `I am a Backend Engineer and WhatsApp Automation Expert with 4+ years of experience building production-grade systems — from fintech APIs to 80+ WhatsApp bots handling 10,000+ messages daily.
 
-My work includes developing scalable microservices, low-latency APIs, and fintech workflows, along with deploying and maintaining systems on AWS using EC2, S3, ECS, and Fargate. I have worked with both container-based and serverless architectures depending on system requirements.
+My WhatsApp automation work spans B2B workflow automation, lead capture bots, FAQ automation, and appointment booking systems — built using Wati.io, Uchat, and Node.js integrations. I have helped businesses automate their customer communication at a fraction of the cost of enterprise tools.
 
-On the DevOps side, I actively work with Docker, GitHub Actions, Linux, Nginx, and cloud observability tools. I have hands-on experience with Kubernetes for container orchestration and Terraform for infrastructure provisioning and environment automation.
+On the engineering side, I build scalable microservices, low-latency APIs, and fintech workflows. I have deployed and maintained production systems on AWS using EC2, S3, ECS, and Fargate — working with Docker, Kubernetes, Terraform, GitHub Actions, and Nginx.
 
-I value clean architecture, system thinking, and reliability, and I also enjoy mentoring engineers and students on backend development, DevOps practices, and real-world deployment workflows.`,
+Currently at EduFund as Product Engineer 2, building product features for India's leading education investment platform. Previously at FinXBridge (with M2P Fintech), where I achieved sub-200ms API latency on Flipkart EMI onboarding flows.
+
+Before transitioning into software engineering, I completed a B.Sc. in Physics (With Distinction) from Pune University and an M.A. in Economics from MJPRU, Bareilly — qualifying the NTA NET examination twice. I also served as an Assistant Professor of Economics, which sharpened my ability to explain complex systems clearly and mentor others effectively.
+
+I mentor 200+ students at Newton School of Technology on Node.js, DevOps, and cloud deployments — and I am building Taiyari Express to bring WhatsApp automation to small Indian businesses at ₹499/month.`,
 	},
+
+	initiatives: [
+		{
+			name: "Taiyari Express",
+			tagline: "WhatsApp Automation for Local Businesses",
+			description:
+				"I believe every small business in India deserves to look professional and never miss a customer — not just the ones who can afford expensive software. Taiyari Express is my attempt to make that possible. Simple WhatsApp automation, no technical setup, no Meta API, no GST hassle. Just pay ₹499/month and we handle everything.",
+			vision:
+				"Helping small Indian businesses grow by giving them tools that big brands already use — at a price that makes sense for them.",
+			price: "₹499/month",
+			link: "/taiyari-express",
+			status: "Live",
+			targets: ["Salons", "Clinics", "Coaching Institutes", "Boutiques", "Gyms", "Local Shops"],
+			features: [
+				"Automated WhatsApp Replies",
+				"FAQ Automation",
+				"Inquiry & Lead Collection",
+				"Appointment Request Handling",
+				"No Technical Setup Needed",
+			],
+		},
+	],
 
 	projects: [
 		{
 			title: "URL Uptime & Status Monitoring System",
 			description:
 				"A backend-focused monitoring system built using Node.js with EJS-based server-side rendering. Performs scheduled URL health checks, tracks uptime and HTTP status codes, and logs downtime events.",
-			logo: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			logo: "/proj-monitor.svg",
 			linkText: "View Project",
 			link: "https://swiftcheck-fft8.onrender.com/dashboard",
 			tags: ["Backend", "Monitoring"],
@@ -154,7 +233,7 @@ I value clean architecture, system thinking, and reliability, and I also enjoy m
 			title: "Taiyari Express - Exam Preparation Platform",
 			description:
 				"A comprehensive exam preparation platform offering practice tests and study materials for competitive exams. Features detailed performance analytics and progress tracking.",
-			logo: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			logo: "/proj-edtech.svg",
 			linkText: "View Project",
 			link: "https://www.taiyari-express.in/",
 			tags: ["Frontend", "EdTech"],
@@ -165,7 +244,7 @@ I value clean architecture, system thinking, and reliability, and I also enjoy m
 			title: "Smoke Limited - AI Smoking Pattern Analyzer",
 			description:
 				"Behavioral analytics web app tracking cigarette consumption and identifying smoking triggers using AI-driven insights. Features time-based pattern detection and intelligent feedback via Puter.js.",
-			logo: "https://i.postimg.cc/VkjGFNq8/sdd.jpg",
+			logo: "/proj-smoke.svg",
 			linkText: "View Project",
 			link: "https://smoke-limited.onrender.com/",
 			tags: ["Backend", "AI"],

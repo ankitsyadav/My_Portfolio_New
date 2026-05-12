@@ -55,6 +55,9 @@ const NavBar = (props) => {
 						<li className={active === "projects" ? "active" : ""}>
 							<Link to="/projects">Projects</Link>
 						</li>
+						<li className={active === "initiatives" ? "active" : ""}>
+							<Link to="/initiatives">Initiatives</Link>
+						</li>
 						<li className={active === "contact" ? "active" : ""}>
 							<Link to="/contact">Contact</Link>
 						</li>
@@ -105,6 +108,14 @@ const NavBar = (props) => {
 							onClick={() => setMenuOpen(false)}
 						>
 							Projects
+						</Link>
+					</li>
+					<li className={active === "initiatives" ? "active" : ""}>
+						<Link
+							to="/initiatives"
+							onClick={() => setMenuOpen(false)}
+						>
+							Initiatives
 						</Link>
 					</li>
 					<li className={active === "contact" ? "active" : ""}>

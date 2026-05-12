@@ -36,7 +36,7 @@ const Hero = () => {
 					<div className="hero-image-wrapper">
 						<div className="hero-image-glow" />
 						<img
-							src="https://i.postimg.cc/VkYCybWk/profile.png"
+							src="/profile.jpeg"
 							alt="Ankit Singh Yadav"
 							className="hero-image"
 						/>

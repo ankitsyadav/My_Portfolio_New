@@ -74,6 +74,17 @@
 	flex-shrink: 0;
 }
 
+.timeline-logo-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--gradient-primary);
+	color: #fff;
+	font-size: 1.3rem;
+	font-weight: 700;
+	border: none;
+}
+
 .timeline-info {
 	flex: 1;
 }

@@ -68,7 +68,7 @@ const About = () => {
 						<div className="about-hero-image">
 							<div className="about-image-wrapper">
 								<img
-									src="https://i.postimg.cc/YScCFdp9/Whats-App-Image-2024-03-30-at-1-30-36-AM.jpg"
+									src="/profile.jpeg"
 									alt="Ankit Singh Yadav"
 								/>
 							</div>
@@ -125,11 +125,17 @@ const About = () => {
 						<div className="about-experience-list">
 							{INFO.experience.map((exp, i) => (
 								<div className="about-exp-card" key={i}>
-									<img
-										src={exp.logo}
-										alt={exp.company}
-										className="about-exp-logo"
-									/>
+									{exp.logo ? (
+										<img
+											src={exp.logo}
+											alt={exp.company}
+											className="about-exp-logo"
+										/>
+									) : (
+										<div className="about-exp-logo-placeholder">
+											{exp.company.charAt(0)}
+										</div>
+									)}
 									<div className="about-exp-info">
 										<h4 className="about-exp-role">
 											{exp.role}
@@ -141,6 +147,30 @@ const About = () => {
 										<span className="about-exp-duration">
 											{exp.duration}
 										</span>
+									</div>
+								</div>
+							))}
+						</div>
+					</section>
+
+					{/* Education */}
+					<section className="about-education-section">
+						<h2 className="section-title">Education</h2>
+						<div className="about-education-list">
+							{INFO.education.map((edu, i) => (
+								<div className="about-edu-card" key={i}>
+									<div className="about-edu-icon">
+										🎓
+									</div>
+									<div className="about-edu-info">
+										<h4 className="about-edu-degree">{edu.degree}</h4>
+										<p className="about-edu-institution">
+											{edu.institution}
+											{edu.location ? ` · ${edu.location}` : ""}
+										</p>
+										{edu.note && (
+											<span className="about-edu-note">{edu.note}</span>
+										)}
 									</div>
 								</div>
 							))}
